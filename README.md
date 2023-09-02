@@ -24,8 +24,9 @@ This guide walks you through the process of setting up a Kubernetes cluster, dep
 1. Deploy the kube-prometheus-stack Helm chart for monitoring:
 
     ```bash
-    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-    helm install my-kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 50.0.0
+    kubectl create ns monitoring
+    cd deploy/k8s/helm/monitoring/kube-premetheus-stack
+    helm upgrade --install kube-prometheus-stack . -n monitoring 
     ```
 2. Verify that Prometheus, Grafana, and related components are running:
     ```bash
