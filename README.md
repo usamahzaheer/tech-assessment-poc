@@ -54,12 +54,14 @@ Helm
     cd <repository-directory>
     ```
 2. build and push your PHP application Docker image:
+
         ```bash
         docker build -t usamahzaheer/php-app:tagname
         docker push usamahzaheer/php-app:tagname
         ```
     Replace repository-url and repository-directory with specific repository details.
 3. Create and deploy a custom Helm chart for your PHP application:
+
         ```bash
         helm create my-php-app
         helm upgrade --install my-php-app ./my-php-app
