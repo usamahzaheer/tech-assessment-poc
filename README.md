@@ -57,7 +57,7 @@ Helm
         docker build -t usamahzaheer/php-app:tagname
         docker push usamahzaheer/php-app:tagname
         ```
-    Replace <repository-url> and <repository-directory> with specific repository details.
+    Replace repository-url and repository-directory with specific repository details.
 3. Create and deploy a custom Helm chart for your PHP application:
         ```bash
         helm create my-php-app
