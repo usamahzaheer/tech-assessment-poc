@@ -38,8 +38,8 @@ This guide walks you through the process of setting up a Kubernetes cluster, dep
     ```
 Access Prometheus and Grafana dashboards:
 
-Prometheus: http://<prometheus-service-ip>:9090
-Grafana: http://<grafana-service-ip>:3000
+- Prometheus: http://prometheus-service-ip:9090
+- Grafana: http://grafana-service-ip:3000
 
 ## Step 3: Create a Custom Helm Chart for PHP Application
 
@@ -57,7 +57,7 @@ Helm
         docker build -t usamahzaheer/php-app:tagname
         docker push usamahzaheer/php-app:tagname
         ```
-    Replace <repository-url> and <repository-directory> with your specific repository details.
+    Replace <repository-url> and <repository-directory> with specific repository details.
 3. Create and deploy a custom Helm chart for your PHP application:
         ```bash
         helm create my-php-app
