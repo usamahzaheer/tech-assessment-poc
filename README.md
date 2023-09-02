@@ -42,6 +42,11 @@ Access Prometheus and Grafana dashboards:
 - Prometheus: http://prometheus-service-ip:9090
 - Grafana: http://grafana-service-ip:3000
 
+4. Similarly deploy loki helm chart
+    ```bash
+    cd deploy/k8s/helm/monitoring/loki
+    helm upgrade --install loki . -n monitoring
+
 ## Step 3: Create a Custom Helm Chart for PHP Application
 
 ### Prerequisites
